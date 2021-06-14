@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Filter.module.css";
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 
 const Filter = ({ filter, handleChange }) => {
   return (
@@ -18,6 +18,9 @@ const Filter = ({ filter, handleChange }) => {
   );
 };
 
-Filter.propTypes = {};
+Filter.propTypes = {
+  filter: PropTypes.string,
+  handleChange: PropTypes.func.isRequired,
+};
 
 export default Filter;
